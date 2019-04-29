@@ -1,0 +1,12 @@
+{%  extends "base.html.twig" %}
+{% form_theme form 'bootstrap_4_layout.html.twig' %}
+{% block body %}
+    <div class="bgc-white p-20 bd">
+        <h6 class="c-grey-900">Basic Form</h6>
+        <div class="mT-30">
+           {{ form_start(form, {'method': 'post', 'action': path('employe')})}}
+            {{ form_widget(form)}}
+            {{ form_end(form) }}
+        </div>
+    </div>
+{% endblock body %}
